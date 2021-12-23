@@ -44,10 +44,13 @@ Connecting to the gcloud.
 Frontend is managed as an app like the API/backend. Default folders are omitted in visualization.
 
 ├── frontend/
+│   ├── node_modules/
 │   ├── src/
 │   │   └── components/
 │   ├── static/
 │   │   ├── css/
 │   │   ├── frontend/
 │   │   └── images/
-└── └── templates/
+├── ├── templates/
+├── ├── package-lock.json
+└── └── package.json
