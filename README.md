@@ -29,3 +29,7 @@ python .\manage.py runserver
 
 # Hosting to gcloud
 Connecting to the gcloud.
+
+# Serializers.py
+
+Converts to Python classes to json.
