@@ -32,6 +32,38 @@ python .\manage.py runserver
 # Hosting to gcloud
 Connecting to the gcloud.
 
-# Serializers.py
 
-Converts to Python classes to json.
+# Backend structure
+
+├── api/
+│   ├── urls.py
+└── └── serializers.py
+
+# Frontend structure
+
+Dependencies:
+npm/node.js
+Babel
+react
+material-ui
+
+Frontend is managed as an app like the API/backend. Default folders are omitted in visualization.
+
+├── frontend/
+│   ├── node_modules/
+│   ├── src/
+│   │   ├── components/
+│   │   │   └── App.js
+│   │   └── index.js
+│   ├── static/
+│   │   ├── css/
+│   │   ├── frontend/
+│   │   └── images/
+├── ├── templates/
+│   │   └── frontend/
+│   │       └── index.html
+├── ├── babel.config.json
+├── ├── package-lock.json
+├── ├── package.json
+├── ├── urls.py
+└── └── webpack.config.js
