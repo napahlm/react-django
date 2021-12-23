@@ -4,6 +4,8 @@ Some experimentation with web development.
 
 # Dependencies
 
+node.js
+
 venv dependencies:
 django
 djangorestnetwork
