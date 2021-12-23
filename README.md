@@ -46,11 +46,18 @@ Frontend is managed as an app like the API/backend. Default folders are omitted 
 ├── frontend/
 │   ├── node_modules/
 │   ├── src/
-│   │   └── components/
+│   │   ├── components/
+│   │   │   └── App.js
+│   │   └── index.js
 │   ├── static/
 │   │   ├── css/
 │   │   ├── frontend/
 │   │   └── images/
 ├── ├── templates/
+│   │   └── frontend/
+│   │       └── index.html
+├── ├── babel.config.json
 ├── ├── package-lock.json
-└── └── package.json
+├── ├── package.json
+├── ├── urls.py
+└── └── webpack.config.js
