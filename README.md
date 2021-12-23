@@ -41,6 +41,12 @@ Connecting to the gcloud.
 
 # Frontend structure
 
+Dependencies:
+npm/node.js
+Babel
+react
+material-ui
+
 Frontend is managed as an app like the API/backend. Default folders are omitted in visualization.
 
 ├── frontend/
