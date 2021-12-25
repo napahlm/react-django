@@ -29,10 +29,6 @@ Run the server.
 python .\manage.py runserver
 ```
 
-# Hosting to gcloud
-Connecting to the gcloud.
-
-
 # Backend structure
 
 ├── api/
@@ -67,3 +63,11 @@ Frontend is managed as an app like the API/backend. Default folders are omitted 
 ├── ├── package.json
 ├── ├── urls.py
 └── └── webpack.config.js
+
+
+
+
+
+
+# Hosting to gcloud
+Coming soon.
