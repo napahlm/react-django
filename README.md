@@ -53,6 +53,7 @@ Frontend is managed as an app like the API/backend. Default folders are omitted 
 │   │   └── index.js
 │   ├── static/
 │   │   ├── css/
+│   │   │   └── index.css [Styling the app]
 │   │   ├── frontend/
 │   │   └── images/
 ├── ├── templates/
