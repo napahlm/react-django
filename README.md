@@ -58,8 +58,8 @@ Javascript code snippets
 
 # Backend structure [Default files omitted]
 
-├── api/
-│   ├── urls.py
+├── api/\\
+│   ├── urls.py\\
 └── └── serializers.py
 
 # Frontend structure [Default files omitted]
