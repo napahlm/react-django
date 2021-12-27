@@ -4,7 +4,7 @@
  
 The purpose of the project is to get familiar with tools for full stack development by developing a web site from scratch.
 
-Initial steps are done with the help of this great tutorial: https://www.youtube.com/watch?v=JD-age0BPVo&list=PLzMcBGfZo4-kCLWnGmK0jUBmGLaJxvi4j
+Initial steps are done with the help of this great tutorial[^1].
 
 ## Hosting the website
 
@@ -58,9 +58,9 @@ Javascript code snippets
 
 # Backend structure [Default files omitted]
 
-├── api/\\
-│   ├── urls.py\\
-└── └── serializers.py
+├── api/  
+│   ├── urls.py  
+└── └── serializers.py  
 
 # Frontend structure [Default files omitted]
 
@@ -72,22 +72,24 @@ material-ui
 
 Frontend is managed as an app like the API/backend.
 
-├── frontend/
-│   ├── node_modules/
-│   ├── src/
-│   │   ├── components/
-│   │   │   └── App.js
-│   │   └── index.js
-│   ├── static/
-│   │   ├── css/
-│   │   │   └── index.css [Styling the app]
-│   │   ├── frontend/
-│   │   └── images/
-├── ├── templates/
-│   │   └── frontend/
-│   │       └── index.html
-├── ├── babel.config.json
-├── ├── package-lock.json
-├── ├── package.json
-├── ├── urls.py
-└── └── webpack.config.js
+├── frontend/  
+│   ├── node_modules/  
+│   ├── src/  
+│   │   ├── components/  
+│   │   │   └── App.js  
+│   │   └── index.js  
+│   ├── static/  
+│   │   ├── css/  
+│   │   │   └── index.css [Styling the app]  
+│   │   ├── frontend/  
+│   │   └── images/  
+├── ├── templates/  
+│   │   └── frontend/  
+│   │       └── index.html  
+├── ├── babel.config.json  
+├── ├── package-lock.json  
+├── ├── package.json  
+├── ├── urls.py  
+└── └── webpack.config.js  
+
+[^1]: https://www.youtube.com/watch?v=JD-age0BPVo&list=PLzMcBGfZo4-kCLWnGmK0jUBmGLaJxvi4j    
