@@ -19,7 +19,7 @@ def generate_unique_code():
 # Storing information. The table is replaced by a model. A layer of abstraction for databases.
 
 class Room(models.Model):                                               # inherits from models
-    code = models.CharField(max_length=8, default="", unique=True)      # Limits on codes
+    code = models.CharField(max_length=8, default=generate_unique_code, unique=True)      # Limits on codes
     host = models.CharField(max_length=50, unique=True)                 # Only one host AKA unique
     guest_can_pause = models.BooleanField(null=False, default=False)    # null=False means a value must be passed
     votes_to_skip = models.IntegerField(null=False, default=1)
