@@ -1,6 +1,6 @@
 # Web Development and Hosting
 
-## Setup
+## Project Plan
 
 ### Creating a website with React and Django using Python
  
