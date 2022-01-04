@@ -33,6 +33,24 @@ python .\manage.py migrate
 python .\manage.py runserver
 ```
 
+7) Check if npm works. In an activated venv, go to the frontend directory and run this command.
+
+```
+cd .\mcontroller\frontend\
+npm run dev
+```
+
+8) If the last step results in "Module not found" or similar do the following:
+
+In the frontend folder, delete node_modules and package-lock.json, then reinstall npm.
+
+```
+Remove-Item .\node_modules\ -Recurse
+Remove-Item .\package-lock.json
+npm install
+npm run dev
+```
+
 ### Creating a website with React and Django using Python
  
 The purpose of the project is to get familiar with tools for full stack development by developing a web site from scratch.
