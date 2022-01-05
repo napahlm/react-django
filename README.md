@@ -1,6 +1,55 @@
 # Web Development and Hosting
 
-## Project Plan
+## Setup
+
+1) Clone the repository. Further setup is done in powershell.
+
+2) Add missing settings with secret key in mcontroller/mcontroller/settings.py.
+
+3) Set up venv in project-name and activate it.
+
+```
+py -m venv env
+.\env\Scripts\activate
+```
+
+4) Install requirements in venv
+
+```
+pip install -r requirements.txt
+```
+
+5) Go into the project and make migrations and migrate to create database
+
+```
+cd .\mcontroller\
+python .\manage.py makemigrations
+python .\manage.py migrate
+```
+
+6) Test by running server.
+
+```
+python .\manage.py runserver
+```
+
+7) Check if npm works. In an activated venv, go to the frontend directory and run this command.
+
+```
+cd .\mcontroller\frontend\
+npm run dev
+```
+
+8) If the last step results in "Module not found" or similar do the following:
+
+In the frontend folder, delete node_modules and package-lock.json, then reinstall npm.
+
+```
+Remove-Item .\node_modules\ -Recurse
+Remove-Item .\package-lock.json
+npm install
+npm run dev
+```
 
 ### Creating a website with React and Django using Python
  
