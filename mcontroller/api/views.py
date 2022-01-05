@@ -25,9 +25,9 @@ class GetRoom(APIView):
                 data = RoomSerializer(room[0]).data
                 data['is_host'] = self.request.session.session_key == room[0].host
                 return Response(data, status=status.HTTP_200_OK)
-            return Response({'Room Not Found': 'Invalid Room Code'}, status = status.HTTP_404_NOT_FOUND)
+            return Response({'Room Not Found': 'Invalid Room Code'}, status=status.HTTP_404_NOT_FOUND)
 
-        return Response({'Bad Request': 'Code Parameter not found in request'}, status = status.HTTP_400_BAD_REQUEST)
+        return Response({'Bad Request': 'Code Parameter not found in request'}, status=status.HTTP_400_BAD_REQUEST)
 
 class CreateRoomView(APIView):
     serializer_class = CreateRoomSerializer
@@ -63,4 +63,4 @@ class CreateRoomView(APIView):
                 return Response(RoomSerializer(room).data, status=status.HTTP_201_CREATED)
 
             # Get room diagnostics and return room
-        return Response({'Bad Request: Invalid data ...'}, status=status.HTTP_400_BAD_REQUEST) # Contains the room
+        return Response({'Bad Request': 'Invalid data ...'}, status=status.HTTP_400_BAD_REQUEST) # Contains the room
