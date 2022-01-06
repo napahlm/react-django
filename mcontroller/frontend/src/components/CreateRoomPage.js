@@ -33,7 +33,7 @@ export default class CreateRoomPage extends Component {
 
     handleGuestCanPauseChange(e) {
         this.setState({
-            guestCanPause: e.target.value === 'true' ? true : false,
+            guestCanPause: e.target.value === "true" ? true : false,
         });
     }
 
@@ -65,15 +65,38 @@ export default class CreateRoomPage extends Component {
                     <FormHelperText component="div">
                         <div align="center"> Guest Control of Playback State </div>
                     </FormHelperText>
-                    <RadioGroup row defaultValue='true' onChange={this.handleGuestCanPauseChange}>
-                        <FormControlLabel value="true" control={<Radio color="primary" />} label="Play/Pause" labelPlacement="bottom" />
-                        <FormControlLabel value="false" control={<Radio color="secondary" />} label="No Control" labelPlacement="bottom" />
+                    <RadioGroup 
+                        row 
+                        defaultValue='true' 
+                        onChange={this.handleGuestCanPauseChange}
+                    >
+                        <FormControlLabel 
+                            value="true" 
+                            control={<Radio color="primary" />} 
+                            label="Play/Pause" 
+                            labelPlacement="bottom" 
+                        />
+                        <FormControlLabel 
+                            value="false" 
+                            control={<Radio color="secondary" />} 
+                            label="No Control" 
+                            labelPlacement="bottom" 
+                        />
                     </RadioGroup>
                 </FormControl>
             </Grid>
             <Grid item xs={12} align="center">
                 <FormControl>
-                    <TextField required={true} type="number" onChange={this.handleVotesChange} defaultValue={this.defaultVotes} inputProps={{min: 1, style:{textAlign: "center"},}} />
+                    <TextField 
+                        required={true} 
+                        type="number" 
+                        onChange={this.handleVotesChange} 
+                        defaultValue={this.defaultVotes} 
+                        inputProps={{
+                            min: 1, 
+                            style:{ textAlign: "center"},
+                        }} 
+                    />
                     <FormHelperText component="div">
                         <div align="center">
                             Votes Required to Skip Song.
@@ -82,10 +105,18 @@ export default class CreateRoomPage extends Component {
                 </FormControl>
             </Grid>
             <Grid item xs={12} align="center">
-                <Button color="primary" variant="contained" onClick={this.handleRoomButtonPressed}>Create Room</Button>
+                <Button 
+                    color="primary" 
+                    variant="contained" 
+                    onClick={this.handleRoomButtonPressed}
+                >
+                    Create Room
+                </Button>
             </Grid>
             <Grid item xs={12} align="center">
-                <Button color="secondary" variant="contained" to="/" component={Link}>Back</Button>
+                <Button color="secondary" variant="contained" to="/" component={Link}>
+                    Back
+                </Button>
             </Grid>
         </Grid>
         );
