@@ -1,5 +1,7 @@
 # Web Development and Hosting
 
+TODO: find bug preventing room joining. Fixed by going back to an earlier reactjs version.
+
 ## Setup
 
 1) Clone the repository. Further setup is done in powershell.

@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import CreateRoomView, RoomView, GetRoom, JoinRoom
+from .views import RoomView, CreateRoomView, GetRoom, JoinRoom
 
 urlpatterns = [
     path('room', RoomView.as_view()),
