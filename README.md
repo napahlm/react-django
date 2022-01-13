@@ -1,5 +1,7 @@
 # Web Development and Hosting
 
+TODO: find bug preventing room joining. Fixed by going back to an earlier reactjs version.
+
 ## Setup
 
 1) Clone the repository. Further setup is done in powershell.
@@ -65,6 +67,7 @@ The end goal of the project is to either host it as a personal portfolio or have
 ## Summary of used tools
 
 ### React
+
 
 Javascript library for building UIs.
 
